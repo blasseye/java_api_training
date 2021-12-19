@@ -1,4 +1,4 @@
-package fr.lernejo.navy_battle.Http_Server;
+package fr.lernejo.navy_battle.server;
 
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
@@ -17,15 +17,6 @@ public class Http_Server{
         this.server.createContext("/ping", new CallHandler());
         this.server.setExecutor(null); // creates a default executor
         this.server.start();
-    }
-    public void createContext(String path, CallHandler handler) {
-        this.server.createContext(path, handler);
-    }
-
-    public void setupContexts() {
-        contexts.forEach(
-            context -> this.createContext(context.path(), context) // assigner le path
-        );
     }
     public void stop() {
         this.server.stop(0);

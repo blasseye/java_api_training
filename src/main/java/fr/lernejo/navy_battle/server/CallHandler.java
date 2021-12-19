@@ -1,4 +1,4 @@
-package fr.lernejo.navy_battle.Http_Server;
+package fr.lernejo.navy_battle.server;
 
 import java.io.IOException;
 import java.io.OutputStream;
