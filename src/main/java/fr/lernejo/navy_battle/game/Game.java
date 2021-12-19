@@ -1,2 +1,4 @@
-package fr.lernejo.navy_battle.game;public class Game {
+package fr.lernejo.navy_battle.game;
+
+public class Game {
 }

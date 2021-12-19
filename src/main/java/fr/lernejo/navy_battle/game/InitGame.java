@@ -2,7 +2,7 @@ package fr.lernejo.navy_battle.game;
 
 import java.util.Scanner;
 
-public class InitBoard {
+public class InitGame {
     public static int saisirEntier(int binf, int bsup)
     {
         Scanner input = new Scanner(System.in);
