@@ -10,13 +10,15 @@ import java.time.Duration;
 
 public class Http_Client {
 
-    private HttpClient client;
-    private URL adversaryUrl;
+    private final HttpClient client;
+    private final URL adversaryUrl;
     protected final int port;
 
-    public Http_Client ( int port, String targetURL )throws IOException{
+    public Http_Client(int port, String targetURL, HttpClient client, URL adversaryUrl)throws IOException{
         this.port = port;
 
+        this.client = client;
+        this.adversaryUrl = adversaryUrl;
     }
     public HttpResponse<String> sendGETRequest(String path){
         HttpResponse<String> response = null;

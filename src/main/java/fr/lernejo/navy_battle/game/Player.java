@@ -6,11 +6,9 @@ import java.util.Scanner;
 
 public class Player {
     private final List<Boat> Liste_Bateau;
-
     public Player(List<Boat> liste_bateau) {
         Liste_Bateau = liste_bateau;
     }
-
     public int[] tirer(){
         System.out.print("A ton tour");
         char lettre;
@@ -18,7 +16,6 @@ public class Player {
         int[] coordonnee = new int[2];
         boolean check_Coordonnee = false;
         Scanner scanner = new Scanner(System.in);
-
         while(!check_Coordonnee){
             System.out.print("Veuillez entrer une Lettre de coordonnee entre A et J: ");
             lettre = scanner.next().charAt(0);
