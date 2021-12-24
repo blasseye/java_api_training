@@ -10,25 +10,16 @@ public class Player {
         Liste_Bateau = liste_bateau;
     }
     public int[] tirer(){
-        System.out.print("A ton tour");
-        char lettre;
-        int colonne=-1, nombre = -1;
+        System.out.print("A ton tour");char lettre;int colonne=-1, nombre = -1;
         int[] coordonnee = new int[2];
         boolean check_Coordonnee = false;
         Scanner scanner = new Scanner(System.in);
         while(!check_Coordonnee){
             System.out.print("Veuillez entrer une Lettre de coordonnee entre A et J: ");
             lettre = scanner.next().charAt(0);
-            colonne = lettre;
-            System.out.print("Veuillez entrer un chiffre de coordonnee entre 0 et 10: ");
-            nombre = scanner.nextInt();
-            if((colonne<=74 && colonne>=65) && (nombre<=10 && nombre>=0))
-                check_Coordonnee=true;
-        }
-        coordonnee[0] = nombre;
-        coordonnee[1] = colonne;
+            colonne = lettre;System.out.print("Veuillez entrer un chiffre de coordonnee entre 0 et 10: ");nombre = scanner.nextInt();if((colonne<=74 && colonne>=65) && (nombre<=10 && nombre>=0))
+                check_Coordonnee=true;}
+        coordonnee[0] = nombre;coordonnee[1] = colonne;
         System.out.print("Vous tirez sur la case : " + coordonnee[1] + coordonnee[0]);
-        return coordonnee;
-
-    }
+        return coordonnee;}
 }
