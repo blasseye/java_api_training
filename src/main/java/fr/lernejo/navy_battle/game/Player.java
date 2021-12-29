@@ -1,6 +1,5 @@
 package fr.lernejo.navy_battle.game;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
