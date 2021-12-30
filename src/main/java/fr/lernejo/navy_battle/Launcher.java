@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
 
 import static java.lang.Integer.parseInt;
 
-public class main {
+public class Launcher {
     static class MyHandler implements HttpHandler {
 
         private final String RESPONSE = "OK";
