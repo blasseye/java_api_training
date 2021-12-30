@@ -55,7 +55,7 @@ public class Launcher {
                 serv.createContext("/ping", new MyHandler());
                 serv.createContext("/api/game/start", new JsonStartHandler());
                 serv.createContext("/api/game/fire", new JsonFireHandler());
-                System.out.println("insh ca marche");
+                System.out.println("ça fonctionne");
                 serv.start();
             }
         }else{
