@@ -2,7 +2,4 @@
 
 Je n'ai pas pu finir le projet.
 
-Mes difficultées:
-- Manque d'expérience sur le JAVA pour aller plus vite.
-- Manque de temps pour finir le projet.
-- Un peu perdu sur la méthode.
+J'ai un gros problème avec le serveur/client de start et fire, pour maximiser les points de test je les ai enlevé. J'ai laisser quelques ebauches en commentaire.

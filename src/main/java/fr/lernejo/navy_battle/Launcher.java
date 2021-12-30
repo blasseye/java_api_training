@@ -23,7 +23,7 @@ public class Launcher {
             os.write(RESPONSE.getBytes());
             os.close();
         }
-    }
+    }/*
     static class JsonStartHandler implements HttpHandler {
 
         private final String RESPONSE = "{\"id\":\"1\", \"url\":\"http://localhost:8080\")";
@@ -46,6 +46,7 @@ public class Launcher {
             os.close();
         }
     }
+    */
     public static void main(String[] args) throws IOException {
         System.out.println(args.length);
         if (args.length > 0) {
@@ -53,8 +54,8 @@ public class Launcher {
                 HttpServer serv = HttpServer.create(new InetSocketAddress(parseInt(args[0])), 0);
                 ExecutorService es = Executors.newFixedThreadPool(1);
                 serv.createContext("/ping", new MyHandler());
-                serv.createContext("/api/game/start", new JsonStartHandler());
-                serv.createContext("/api/game/fire", new JsonFireHandler());
+                //serv.createContext("/api/game/start", new JsonStartHandler());
+                //serv.createContext("/api/game/fire", new JsonFireHandler());
                 System.out.println("ça fonctionne");
                 serv.start();
             }

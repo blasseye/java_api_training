@@ -5,6 +5,8 @@ import fr.lernejo.navy_battle.Launcher;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+
 class LauncherTest {
     @Test
     public void mauvais_taille_port() {
@@ -21,4 +23,8 @@ class LauncherTest {
         Assertions.assertThrows( Exception.class, () -> Launcher.main(new String[] {""}));
     }
 
+    @Test
+    public void bon_port() {
+        Assertions.assertDoesNotThrow( () -> Launcher.main(new String[] { Integer.toString(12345) }));
+    }
 }
