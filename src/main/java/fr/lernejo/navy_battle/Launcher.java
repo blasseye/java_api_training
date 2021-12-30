@@ -26,7 +26,7 @@ public class Launcher {
     }
     static class JsonStartHandler implements HttpHandler {
 
-        private final String RESPONSE = "OK";
+        private final String RESPONSE = "\"{\\\"id\\\":\\\"1\\\", \\\"url\\\":\\\"http://localhost:\" + port + \"\\\", \\\"message\\\":\\\"hello\\\"}\"";
 
         public void handle(HttpExchange t) throws IOException {
             t.sendResponseHeaders(200, RESPONSE.length());
