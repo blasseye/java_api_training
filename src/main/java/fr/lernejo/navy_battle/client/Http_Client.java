@@ -8,7 +8,6 @@ import java.net.http.HttpResponse;
 import java.time.Duration;
 
 public class Http_Client {
-
     private final HttpClient client;
     private final URL adversaryUrl;
     protected final int port;

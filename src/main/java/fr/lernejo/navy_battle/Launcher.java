@@ -46,7 +46,6 @@ public class Launcher {
             os.close();
         }
     }
-
     public static void main(String[] args) throws IOException {
         System.out.println(args.length);
         if (args.length > 0) {
