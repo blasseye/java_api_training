@@ -2,7 +2,7 @@ package fr.lernejo.navy_battle;
 
 import fr.lernejo.navy_battle.server.Http_Server;
 
-public class Launcher {
+public class LauncherServ {
 
     public static void main(String[] args) throws Exception {
         if (args.length == 1) {
